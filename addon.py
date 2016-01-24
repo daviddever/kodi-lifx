@@ -26,7 +26,6 @@ capture = xbmc.RenderCapture()
 if useLegacyApi:
 	capture.capture(32, 32, xbmc.CAPTURE_FLAG_CONTINUOUS)
 
-color = []
 #lights = get_bulb_ips()
 
 #print 'Found LIFX lights'
@@ -58,6 +57,8 @@ while not xbmc.abortRequested:
 		red = [];
 		green = [];
 		blue = [];
+
+                color = []
 
 		for y in range(height):
 			row = width * y * 4
