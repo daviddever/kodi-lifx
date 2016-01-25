@@ -7,17 +7,6 @@ import colorsys
 
 from lifxlan import *
 
-#def get_bulb_ips:
-#        ips = []
-#        num_lights = None
-#        lifx = lifxlan.LifxLAN(num_lights)
-#        devices = lifxlan.lifx.get_lights()     
-
-#	for d in devices:
-#        	ips.append(d.ip_addr)
-
-#	return ips
-
 lifxlan=LifxLAN()
 
 useLegacyApi   = True
@@ -26,12 +15,6 @@ capture = xbmc.RenderCapture()
 if useLegacyApi:
 	capture.capture(32, 32, xbmc.CAPTURE_FLAG_CONTINUOUS)
 
-#lights = get_bulb_ips()
-
-#print 'Found LIFX lights'
-#for d in lights:
-#	print d
- 
 
 class PlayerMonitor( xbmc.Player ):
 	def __init__( self, *args, **kwargs ):
